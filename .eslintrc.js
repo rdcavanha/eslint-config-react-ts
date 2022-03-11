@@ -50,6 +50,16 @@ module.exports = {
     'import/no-default-export': 'error',
     'import/prefer-default-export': 'off',
     'import/no-unresolved': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        semi: true,
+        trailingComma: 'all',
+        singleQuote: true,
+        printWidth: 120,
+        tabWidth: 2,
+      },
+    ],
   },
   overrides: [
     {
