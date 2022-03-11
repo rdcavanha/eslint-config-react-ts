@@ -25,6 +25,11 @@ module.exports = {
     'import/parsers': {
       '@typescript-eslint/parser': extensions,
     },
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
   plugins: ['import', 'react', '@typescript-eslint'],
   rules: {
@@ -34,6 +39,8 @@ module.exports = {
       {
         ts: 'never',
         tsx: 'never',
+        js: 'never',
+        jsx: 'never',
       },
     ],
     'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
