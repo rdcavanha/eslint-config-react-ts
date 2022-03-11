@@ -1,4 +1,4 @@
-const extensions = ['.ts', '.tsx'];
+const extensions = ['.ts', '.tsx', '.js', '.jsx'];
 
 module.exports = {
   env: {
@@ -24,12 +24,6 @@ module.exports = {
   settings: {
     'import/parsers': {
       '@typescript-eslint/parser': extensions,
-    },
-    'import/resolver': {
-      typescript: {
-        alwaysTryTypes: true,
-        project: './tsconfig.json',
-      },
     },
   },
   plugins: ['import', 'react', '@typescript-eslint'],
