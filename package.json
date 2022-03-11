@@ -1,5 +1,5 @@
 {
-  "name": "@rdcavanha/react-ts-eslint-config",
+  "name": "@rdcavanha/eslint-config-react-ts",
   "version": "1.0.1",
   "description": "Curated config for React + TypeScript apps",
   "main": "index.js",
