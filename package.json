@@ -1,6 +1,6 @@
 {
   "name": "@rdcavanha/eslint-config-react-ts",
-  "version": "1.0.4",
+  "version": "1.0.3",
   "description": "Curated config for React + TypeScript apps",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   ],
   "author": "Rodrigo Cavanha",
   "license": "MIT",
-  "devDependencies": {
+  "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
     "eslint": "^8.10.0",
