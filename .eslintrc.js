@@ -66,6 +66,7 @@ module.exports = {
         'no-undef': 'off',
         'react/prop-types': 'off',
         'no-unused-vars': 'off',
+        '@typescript-eslint/no-explicit-any': 'error',
       },
     },
     {
