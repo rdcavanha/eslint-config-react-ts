@@ -1,6 +1,6 @@
 {
   "name": "@rdcavanha/eslint-config-react-ts",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Curated config for React + TypeScript apps",
   "main": "index.js",
   "scripts": {

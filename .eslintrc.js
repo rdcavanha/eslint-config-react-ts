@@ -4,15 +4,18 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    jest: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-    'prettier',
-    'plugin:prettier/recommended',
-    'plugin:react/jsx-runtime',
-  ],
+  extends: ['plugin:react/recommended', 'airbnb', 'prettier', 'plugin:prettier/recommended'],
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': extensions,
+    },
+    'import/resolver': {
+      node: {
+        extensions,
+      },
+    },
+  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -21,17 +24,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  settings: {
-    'import/parsers': {
-      '@typescript-eslint/parser': extensions,
-    },
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-    },
-  },
-  plugins: ['import', 'react', '@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint'],
   rules: {
     'import/extensions': [
       'error',
@@ -43,14 +36,17 @@ module.exports = {
         jsx: 'never',
       },
     ],
-    'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
-    'react/jsx-props-no-spreading': 'off',
-    'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
-    'arrow-body-style': ['error', 'as-needed'],
+    'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-props-no-spreading': 'off',
     'import/no-default-export': 'error',
     'import/prefer-default-export': 'off',
-    'import/no-unresolved': 'error',
+    'import/no-unresolved': 'off',
+    'arrow-body-style': ['error', 'as-needed'],
+    'no-use-before-define': ['error', { functions: false }],
+    'dot-notation': 'off',
+    'max-classes-per-file': 'off',
     'prettier/prettier': [
       'error',
       {
@@ -72,7 +68,7 @@ module.exports = {
       },
     },
     {
-      files: ['*.test.ts', '*.test.tsx', './*.ts', '**/__tests__/*.*'],
+      files: ['*test.ts', '*test.tsx', './*.ts', './*.js', '**/__tests__/*.*'],
       rules: {
         'import/no-extraneous-dependencies': 'off',
       },
