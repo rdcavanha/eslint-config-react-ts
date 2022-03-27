@@ -1,10 +1,9 @@
 {
   "name": "@rdcavanha/eslint-config-react-ts",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Curated config for React + TypeScript apps",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [
     "react",
     "typescript",
@@ -15,7 +14,7 @@
   "license": "MIT",
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.14.0",
-    "@typescript-eslint/parser": "^5.14.0",
+    "@typescript-eslint/parser": "^5.16.0",
     "eslint": "^8.10.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
@@ -24,6 +23,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.3",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "eslint-import-resolver-typescript": "^2.7.0"
   }
 }
