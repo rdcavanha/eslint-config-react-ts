@@ -73,9 +73,10 @@ module.exports = {
       },
     },
     {
-      files: ['*test.ts', '*test.tsx', './*.ts', './*.js', '**/__tests__/*.*'],
+      files: ['*test.ts', '*test.tsx', '*.stories.ts', '*.stories.tsx', './*.ts', './*.js', '**/__tests__/*.*'],
       rules: {
         'import/no-extraneous-dependencies': 'off',
+        'import/no-default-export': 'off',
       },
     },
   ],
